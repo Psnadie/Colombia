@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — CO Colombia Official Tourism</title>
+<meta name="description" content="Contact Colombia's official tourism agency. Find our offices, plan your trip, and get practical travel information." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- Navigation -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="CO Colombia — Home">
+      <img src="assets/Colombia_Marca.png" alt="CO Colombia official logo" />
+      <div class="nav-logo-sep" aria-hidden="true"></div>
+      <span class="nav-brand">Colombia Tourism</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="routes.html">Routes</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Plan your trip</a>
+    <label for="nav-toggle-c" class="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-toggle-c" class="nav-toggle-input">
+  <div class="nav-mobile-menu" id="mobile-menu-c" role="menu">
+    <a href="index.html" role="menuitem">Home</a>
+    <a href="destinations.html" role="menuitem">Destinations</a>
+    <a href="routes.html" role="menuitem">Routes</a>
+    <a href="contact.html" role="menuitem">Contact</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- Page hero -->
+<header class="page-hero" aria-label="Contact page header">
+  <div class="page-hero-bg" style="background-image:url('assets/photos/fondo_palmas_montanas.jpg'); background-position:center 60%; opacity:0.25;" aria-hidden="true"></div>
+  <div class="container">
+    <span class="eyebrow" style="color:var(--mist); margin-bottom:20px; position:relative; z-index:1;">Contact</span>
+    <h1 class="page-hero-title">reach us<br/><em>we respond</em></h1>
+    <p class="page-hero-sub">Whether you are planning a first visit or returning to a territory you already know — we can help. Our offices are present in five cities across Colombia.</p>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 1 — Contact Form
+═══════════════════════════════════════════ -->
+<section class="contact-section" aria-labelledby="form-heading" id="form">
+  <div class="container">
+    <span class="eyebrow">Get in touch</span>
+    <h2 id="form-heading">Write to us</h2>
+
+    <div class="form-grid">
+
+      <aside class="form-aside">
+        <h3>How can we help?</h3>
+        <p>Colombia Tourism is the official tourism agency of Colombia. We assist international visitors with trip planning, booking coordination, press credentials, and accessibility support.</p>
+        <p>Our team is based across five offices in Colombia and works in English, Spanish, French, and Portuguese.</p>
+        <div class="response-note">
+          We respond to all enquiries within 2 business days. For urgent matters, please indicate "Urgent" in your message.
+        </div>
+      </aside>
+
+      <form class="contact-form" id="contact-form" aria-label="Contact form">
+
+        <div class="form-row-two">
+          <div class="field-group">
+            <label class="field-label" for="full-name">Full name <span aria-hidden="true">*</span></label>
+            <input class="field-input" type="text" id="full-name" name="full-name" autocomplete="name" placeholder="Your full name" required aria-required="true" minlength="2" />
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="email">Email address <span aria-hidden="true">*</span></label>
+            <input class="field-input" type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required aria-required="true" />
+          </div>
+        </div>
+
+        <div class="form-row-two">
+          <div class="field-group">
+            <label class="field-label" for="country">Country of origin</label>
+            <input class="field-input" type="text" id="country" name="country" autocomplete="country-name" placeholder="Country" />
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="inquiry-type">Type of inquiry <span aria-hidden="true">*</span></label>
+            <select class="field-input" id="inquiry-type" name="inquiry-type" required aria-required="true">
+              <option value="" disabled selected>Select inquiry type</option>
+              <option value="general">General information</option>
+              <option value="booking">Booking assistance</option>
+              <option value="press">Press &amp; media</option>
+              <option value="accessibility">Accessibility requests</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea class="field-textarea" id="message" name="message" placeholder="Describe how we can help you. Include preferred dates, destinations, or any specific requirements." required aria-required="true" minlength="20"></textarea>
+        </div>
+
+        <div class="form-submit-row">
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 2 — Offices
+═══════════════════════════════════════════ -->
+<section class="contact-section" aria-labelledby="offices-heading" id="offices">
+  <div class="container">
+    <span class="eyebrow">Tourism offices</span>
+    <h2 id="offices-heading">Our offices in Colombia</h2>
+    <p style="max-width:520px; margin-top:12px; color:var(--stone);">Each office provides in-person assistance for visitors and tour operators. Walk-in hours are Monday to Friday, 9:00 AM to 5:00 PM local time.</p>
+
+    <!-- OpenStreetMap centred on Colombia -->
+    <div class="map-container" aria-label="Map of Colombia showing office locations">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-80.0%2C-5.0%2C-65.0%2C13.0&layer=mapnik&marker=4.6097%2C-74.0817"
+        title="Map of Colombia — OpenStreetMap"
+        loading="lazy"
+        aria-label="Interactive map centred on Colombia"
+      ></iframe>
+    </div>
+
+    <div class="offices-grid" role="list" aria-label="Office locations">
+
+      <div class="office-card" role="listitem">
+        <div class="office-city">Bogotá</div>
+        <span class="office-badge">Main HQ</span>
+        <div class="data-record">
+          <div class="data-row"><span class="data-key">Address</span><span class="data-val">Calle 28 No. 13A-15, Torre A, Piso 17, Centro Internacional, Bogotá D.C.</span></div>
+          <div class="data-row"><span class="data-key">Phone</span><span class="data-val"><a href="tel:+5716863627">+57 (1) 686 3627</a></span></div>
+          <div class="data-row"><span class="data-key">Email</span><span class="data-val"><a href="mailto:info@procolombia.co">info@procolombia.co</a></span></div>
+        </div>
+      </div>
+
+      <div class="office-card" role="listitem">
+        <div class="office-city">Medellín</div>
+        <div class="data-record" style="margin-top:28px;">
+          <div class="data-row"><span class="data-key">Address</span><span class="data-val">Carrera 43A No. 1-50, Torre 3, Piso 20, El Poblado, Medellín</span></div>
+          <div class="data-row"><span class="data-key">Phone</span><span class="data-val"><a href="tel:+5744485920">+57 (4) 448 5920</a></span></div>
+          <div class="data-row"><span class="data-key">Email</span><span class="data-val"><a href="mailto:medellin@procolombia.co">medellin@procolombia.co</a></span></div>
+        </div>
+      </div>
+
+      <div class="office-card" role="listitem">
+        <div class="office-city">Cartagena</div>
+        <div class="data-record" style="margin-top:28px;">
+          <div class="data-row"><span class="data-key">Address</span><span class="data-val">Calle del Arsenal No. 8-141, Centro Histórico, Cartagena de Indias</span></div>
+          <div class="data-row"><span class="data-key">Phone</span><span class="data-val"><a href="tel:+5766601717">+57 (6) 660 1717</a></span></div>
+          <div class="data-row"><span class="data-key">Email</span><span class="data-val"><a href="mailto:cartagena@procolombia.co">cartagena@procolombia.co</a></span></div>
+        </div>
+      </div>
+
+      <div class="office-card" role="listitem">
+        <div class="office-city">Cali</div>
+        <div class="data-record" style="margin-top:28px;">
+          <div class="data-row"><span class="data-key">Address</span><span class="data-val">Carrera 4 No. 7-18, Centro, Cali, Valle del Cauca</span></div>
+          <div class="data-row"><span class="data-key">Phone</span><span class="data-val"><a href="tel:+5724895600">+57 (2) 489 5600</a></span></div>
+          <div class="data-row"><span class="data-key">Email</span><span class="data-val"><a href="mailto:cali@procolombia.co">cali@procolombia.co</a></span></div>
+        </div>
+      </div>
+
+      <div class="office-card" role="listitem">
+        <div class="office-city">Santa Marta</div>
+        <div class="data-record" style="margin-top:28px;">
+          <div class="data-row"><span class="data-key">Address</span><span class="data-val">Carrera 1C No. 10-09, Centro Histórico, Santa Marta, Magdalena</span></div>
+          <div class="data-row"><span class="data-key">Phone</span><span class="data-val"><a href="tel:+5754222688">+57 (5) 422 2688</a></span></div>
+          <div class="data-row"><span class="data-key">Email</span><span class="data-val"><a href="mailto:santamarta@procolombia.co">santamarta@procolombia.co</a></span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SECTION 3 — How to reach Colombia
+═══════════════════════════════════════════ -->
+<section class="travel-section" aria-labelledby="travel-heading" id="travel">
+  <div class="container">
+    <span class="eyebrow">How to arrive</span>
+    <h2 id="travel-heading">Reaching Colombia</h2>
+    <p style="max-width:520px; margin-top:12px; color:var(--stone);">Colombia is served by four international airports, with direct connections from North America, Europe, and Latin America. Entry requirements vary by nationality.</p>
+
+    <div class="travel-grid">
+
+      <!-- Left column -->
+      <div>
+
+        <!-- Airports -->
+        <div class="travel-block">
+          <h3>Major international airports</h3>
+          <ul class="airport-list" aria-label="Major airports in Colombia">
+            <li class="airport-item">
+              <div>
+                <div class="airport-code">BOG</div>
+              </div>
+              <div>
+                <div class="airport-name">El Dorado International Airport</div>
+                <div class="airport-city">Bogotá D.C. — Primary international hub</div>
+              </div>
+            </li>
+            <li class="airport-item">
+              <div>
+                <div class="airport-code">MDE</div>
+              </div>
+              <div>
+                <div class="airport-name">José María Córdova International Airport</div>
+                <div class="airport-city">Rionegro (Medellín) — Second largest hub</div>
+              </div>
+            </li>
+            <li class="airport-item">
+              <div>
+                <div class="airport-code">CTG</div>
+              </div>
+              <div>
+                <div class="airport-name">Rafael Núñez International Airport</div>
+                <div class="airport-city">Cartagena de Indias — Caribbean gateway</div>
+              </div>
+            </li>
+            <li class="airport-item">
+              <div>
+                <div class="airport-code">CLO</div>
+              </div>
+              <div>
+                <div class="airport-name">Alfonso Bonilla Aragón International Airport</div>
+                <div class="airport-city">Palmira (Cali) — Pacific region gateway</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Airlines -->
+        <div class="travel-block">
+          <h3>Airline connections</h3>
+
+          <div class="airline-region">
+            <span class="airline-region-name">North America</span>
+            <div class="airline-list">
+              American Airlines (Miami, New York, Dallas) &middot; United Airlines (Houston, Newark) &middot; Delta (Atlanta) &middot; Avianca (multiple US cities) &middot; Spirit (Fort Lauderdale)
+            </div>
+          </div>
+
+          <div class="airline-region">
+            <span class="airline-region-name">Europe</span>
+            <div class="airline-list">
+              Iberia (Madrid) &middot; Air France (Paris) &middot; Lufthansa (Frankfurt) &middot; KLM (Amsterdam) &middot; Avianca (Madrid, Barcelona, London) &middot; Wingo (seasonal)
+            </div>
+          </div>
+
+          <div class="airline-region">
+            <span class="airline-region-name">Latin America</span>
+            <div class="airline-list">
+              LATAM (Lima, Buenos Aires, Santiago, São Paulo) &middot; Avianca (regional network) &middot; Copa Airlines (Panama City hub) &middot; Wingo (regional low-cost)
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right column: Visas -->
+      <div>
+        <div class="travel-block">
+          <h3>Entry requirements &amp; visas</h3>
+
+          <p style="margin-bottom:20px;">Colombia does not require a visa for citizens of most countries. The standard tourist stay is 90 days per calendar year, with the possibility of a single 90-day extension at the Migración Colombia office.</p>
+
+          <table class="visa-table" aria-label="Visa requirements by region">
+            <thead>
+              <tr>
+                <th scope="col">Region / Country group</th>
+                <th scope="col">Entry requirement</th>
+                <th scope="col">Max stay</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>European Union</td>
+                <td>Visa-free</td>
+                <td>90 days</td>
+              </tr>
+              <tr>
+                <td>United States &amp; Canada</td>
+                <td>Visa-free</td>
+                <td>90 days</td>
+              </tr>
+              <tr>
+                <td>United Kingdom</td>
+                <td>Visa-free</td>
+                <td>90 days</td>
+              </tr>
+              <tr>
+                <td>Latin America (Andean &amp; Mercosur)</td>
+                <td>Visa-free</td>
+                <td>90 days</td>
+              </tr>
+              <tr>
+                <td>Australia &amp; New Zealand</td>
+                <td>Visa-free</td>
+                <td>90 days</td>
+              </tr>
+              <tr>
+                <td>Japan, South Korea</td>
+                <td>Visa-free</td>
+                <td>90 days</td>
+              </tr>
+              <tr>
+                <td>China, India, Russia</td>
+                <td>Tourist visa required</td>
+                <td>30–90 days</td>
+              </tr>
+              <tr>
+                <td>All other nations</td>
+                <td>Check with Colombian consulate</td>
+                <td>Varies</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="visa-note" role="note">
+            <strong style="font-weight:500; color:var(--forest);">Entry requirements:</strong> All visitors require a valid passport (minimum 6 months validity), a return or onward ticket, and proof of sufficient funds. Yellow fever vaccination certificate required for travellers arriving from or transiting through yellow fever endemic countries. Visa information is subject to change — verify with the nearest Colombian consulate before travel.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA band -->
+<section style="background:var(--forest); padding:80px 0; text-align:center;" aria-label="Call to action">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--mist); margin-bottom:20px;">Begin your encounter</span>
+    <h2 style="font-family:var(--font-display); font-weight:300; font-size:38px; color:var(--cream); margin-bottom:16px; text-wrap:pretty;">Colombia does not perform.<br/>It simply is.</h2>
+    <p style="color:var(--sand); max-width:440px; margin:0 auto 40px; font-style:italic; font-family:var(--font-display); font-size:18px; line-height:1.6;">Come as a witness. We will take care of the rest.</p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a href="destinations.html" class="btn btn-inv">Explore destinations</a>
+      <a href="routes.html" class="btn btn-outline-inv">View routes</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">Colombia Tourism</div>
+        <div class="footer-tagline">Come as a witness.</div>
+      </div>
+      <nav aria-label="Footer navigation">
+        <span class="footer-col-label">Discover</span>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="routes.html">Tourist Routes</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer contact links">
+        <span class="footer-col-label">Contact</span>
+        <ul class="footer-links">
+          <li><a href="contact.html">Get in touch</a></li>
+          <li><a href="#offices">Our offices</a></li>
+          <li><a href="#travel">How to arrive</a></li>
+        </ul>
+      </nav>
+      <div>
+        <span class="footer-col-label">Connect</span>
+        <ul class="footer-links">
+          <li><a href="#form">Press &amp; Media</a></li>
+          <li><a href="#form">Partners</a></li>
+          <li><a href="#form">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <img src="assets/Colombia_Marca.png" alt="CO Colombia — Official Tourism" />
+      <span class="footer-copy">&copy; 2025 ProColombia &middot; Official Tourism Agency of Colombia</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
